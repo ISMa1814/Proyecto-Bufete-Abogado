@@ -16,6 +16,7 @@ MySqlConfiguration cadenaConexion = new MySqlConfiguration(builder.Configuration
 builder.Services.AddSingleton(cadenaConexion);
 builder.Services.AddScoped<IUsuarioServicio, UsuarioServicio>();
 builder.Services.AddSweetAlert2();
+builder.Services.AddScoped<IClienteServicio, ClienteServicio>();
 
 var app = builder.Build();
 
